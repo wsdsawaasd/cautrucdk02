@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>???</title>
+</head>
+<body>
+<script>
+    var a = parseInt(prompt("nhap so a"));
+    var b = parseInt(prompt("nhap so b"));
+    var c = parseInt(prompt("nhap so c"));
+    var delta = b * b - 4 * a * c;
+    var x1 = (-b - Math.sqrt(delta)) / (2 * a);
+    var x2 = (-b + Math.sqrt(delta)) / (2 * a);
+    var x3 = -b / (2 * a);
+    if (delta > 0) {
+        document.write(x1 + "   ,   " + x2);
+    } else if (delta === 0) {
+        document.write(x3);
+    } else {
+        alert("vo nghiem")
+    }
+</script>
+</body>
+</html>
